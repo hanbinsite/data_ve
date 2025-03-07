@@ -1,20 +1,20 @@
 {
-  "name": "duihao-jo",
+  "name": "duihao-evve",
   "type": "module",
   "version": "0.1.0",
   "private": true,
   "packageManager": "pnpm@9.15.0",
-  "description": "对号Jo!包包是一套基于AI的新质生产力工具集，为中文语态下的创作而生，集多模型对话、知识库管理、AI绘画、AI语音、翻译等功能于一体的多模态AI助手。无论是零技术用户还是技术研发者，都能在 Duihao Jo! 中找到适合自己的AI功能，以利用AI技术提升工作效率和创造力",
+  "description": "一个使用WEB前端技术，融合 electron + Vite + Vue3 + element plus 的跨端桌面程序集成开发框架",
   "author": {
     "name": "Liu Yadong",
     "email": "lyd@duihao.com",
     "url": "https://www.duihao.com",
     "com": "Duihao Inc."
   },
-  "license": "Apache-2.0",
-  "homepage": "https://jo.duihao.com",
+  "license": "MIT",
+  "homepage": "https://evve.duihao.com",
   "repository": {
-    "url": "https://gitee.com/duihao/jo"
+    "url": "https://gitee.com/duihao/evve"
   },
   "main": "electron.main.js",
   "scripts": {
