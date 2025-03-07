@@ -1,0 +1,19 @@
+{
+  "appId": "duihao.jo",
+  "productName": "DuihaoJo!",
+  "copyright": "Copyright © 2024 Duihao Inc.",
+  "files": ["./electron.main.js", "./dist"],
+  "extraFiles": [
+    // 把指定的资源复制到程序根目录，即把server文件夹的内容复制到程序根目录
+    "./server"
+  ],
+  "directories": {
+    "output": "dists" // 输出文件路径
+  },
+  "win": {
+    // win相关配置
+    "icon": "./resource/logo.ico", // 图标，当前图标在根目录下，注意这里有两个坑
+    "requestedExecutionLevel": "requireAdministrator", // 获取管理员权限
+    "target": ["nsis", "zip"] // 利用nsis制作安装程序
+  }
+}
