@@ -30,32 +30,13 @@ function handleClose(key: string, keyPath: string[]) {
         <el-icon>
           <Location />
         </el-icon>
-        <span>Navigator One</span>
+        <span>Mysql</span>
       </template>
-      <el-menu-item-group>
+      <el-menu-item index="1-4">
         <template #title>
-          <span>Group One</span>
+          <span>默认数据源</span>
         </template>
-        <el-menu-item index="/nav/1/item-1">
-          item one
-        </el-menu-item>
-        <el-menu-item index="1-2">
-          item two
-        </el-menu-item>
-      </el-menu-item-group>
-      <el-menu-item-group title="Group Two">
-        <el-menu-item index="1-3">
-          item three
-        </el-menu-item>
-      </el-menu-item-group>
-      <el-sub-menu index="1-4">
-        <template #title>
-          <span>item four</span>
-        </template>
-        <el-menu-item index="1-4-1">
-          item one
-        </el-menu-item>
-      </el-sub-menu>
+      </el-menu-item>
     </el-sub-menu>
     <el-menu-item index="/nav/2">
       <el-icon>

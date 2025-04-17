@@ -11,36 +11,25 @@ import { toggleDark } from '~/composables'
         <div class="text-xl">
           <img src="../../assets/logo.png" class="logo">
         </div>
-        <span>Duihao Jo!</span>
+        <span>Data Ve</span>
       </div>
     </el-menu-item>
     <el-sub-menu index="2">
       <template #title>
-        Workspace
+        连接管理
       </template>
       <el-menu-item index="2-1">
-        item one
+        新增连接
       </el-menu-item>
       <el-menu-item index="2-2">
-        item two
+        连接管理
       </el-menu-item>
       <el-menu-item index="2-3">
-        item three
+        导入配置
       </el-menu-item>
-      <el-sub-menu index="2-4">
-        <template #title>
-          item four
-        </template>
-        <el-menu-item index="2-4-1">
-          item one
-        </el-menu-item>
-        <el-menu-item index="2-4-2">
-          item two
-        </el-menu-item>
-        <el-menu-item index="2-4-3">
-          item three
-        </el-menu-item>
-      </el-sub-menu>
+      <el-menu-item index="2-3">
+        导出配置
+      </el-menu-item>
     </el-sub-menu>
     <el-menu-item index="3" disabled>
       Info
@@ -58,11 +47,6 @@ import { toggleDark } from '~/composables'
       </button>
     </el-menu-item>
 
-    <el-menu-item h="full">
-      <a class="size-full flex items-center justify-center" :href="repository.url" target="_blank">
-        <div i-ri-github-fill />
-      </a>
-    </el-menu-item>
   </el-menu>
 </template>
 
