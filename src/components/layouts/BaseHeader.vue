@@ -31,9 +31,17 @@ import { toggleDark } from '~/composables'
         导出配置
       </el-menu-item>
     </el-sub-menu>
-    <el-menu-item index="3" disabled>
-      Info
+    <el-menu-item index="3">
+      查询
     </el-menu-item>
+    <el-sub-menu index="5">
+      <template #title>
+        工具
+      </template>
+      <el-menu-item index="5-1">
+        服务监控
+      </el-menu-item>
+    </el-sub-menu>
     <el-menu-item index="4">
       Orders
     </el-menu-item>
@@ -52,9 +60,9 @@ import { toggleDark } from '~/composables'
 
 <style lang="scss">
 .el-menu-top {
-  // &.ep-menu--horizontal > .ep-menu-item:nth-child(1) {
-  //   margin-right: auto;
-  // }
+   &.ep-menu--horizontal > .ep-menu-item:nth-child(5) {
+     margin-right: auto;
+   }
   height: 42px;
 
   .logo {

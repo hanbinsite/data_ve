@@ -2,7 +2,6 @@
 import {
   Document,
   Menu as IconMenu,
-  Location,
   Setting,
 } from '@element-plus/icons-vue'
 
@@ -21,22 +20,31 @@ function handleClose(key: string, keyPath: string[]) {
   <el-menu
     router
     default-active="1"
-    class="el-menu-vertical-demo"
+    class="el-menu-vertical-demo left-menu-box"
     @open="handleOpen"
     @close="handleClose"
+    style="width: 330px;"
   >
     <el-sub-menu index="1">
       <template #title>
         <el-icon>
-          <Location />
+          <!-- <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-mysql"></use>
+        </svg> -->
+        <svg-icon iconName="icon-mysql"></svg-icon>
         </el-icon>
         <span>Mysql</span>
       </template>
-      <el-menu-item index="1-4">
+      <el-sub-menu index="1-4">
         <template #title>
           <span>默认数据源</span>
         </template>
-      </el-menu-item>
+        <el-menu-item index="/nav/2">
+          <template #title>
+            数据库
+          </template>
+        </el-menu-item>
+      </el-sub-menu>
     </el-sub-menu>
     <el-menu-item index="/nav/2">
       <el-icon>
@@ -64,3 +72,10 @@ function handleClose(key: string, keyPath: string[]) {
     </el-menu-item>
   </el-menu>
 </template>
+
+
+<style scoped>
+  .left-menu-box {
+    width: 260px;
+  }
+</style>
